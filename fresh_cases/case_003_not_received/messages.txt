@@ -1,0 +1,2 @@
+2026-06-18 14:59 | buyer | Hi, my order has not arrived yet. Can you check on it?
+2026-06-19 14:59 | seller | Tracking shows it was delivered on June 13. Could you check with neighbors or your building office?

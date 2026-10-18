@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+2886721,Sam O.,Leather journal,46.00,2026-03-23,2026-03-25,USPS,94001131734821130426579,delivered,2026-03-28

@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+1331662,Jon T.,Leather journal,8.50,2026-05-16,2026-05-18,UPS,1ZEM00L98453654214,delivered,2026-05-21

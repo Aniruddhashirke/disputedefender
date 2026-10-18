@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+5506957,Dev R.,Art print set,24.00,2026-06-17,2026-06-18,UPS,1Z01XT8W8484237801,delivered,2026-06-20

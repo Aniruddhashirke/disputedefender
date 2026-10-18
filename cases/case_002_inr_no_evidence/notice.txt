@@ -1,0 +1,6 @@
+# SYNTHETIC EXAMPLE
+platform: etsy
+type: item not received
+amount: 60.00
+opened: 2026-03-10
+reason: Item did not arrive

@@ -1,0 +1,2 @@
+2026-01-23 10:48 | buyer | The box was crushed and the item inside is broken.
+2026-01-24 10:48 | seller | I am sorry to hear that. I packed it in a double-walled box with bubble wrap. I can offer a replacement or a partial refund.

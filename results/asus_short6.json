@@ -1,0 +1,211 @@
+{
+  "version": "2026.10.15-b",
+  "model": "gemma3:4b",
+  "backend": "ollama",
+  "repeat": 1,
+  "photos": "code",
+  "prompt_style": "short",
+  "summary": {
+    "runs": 6,
+    "errors": 0,
+    "interrupted": false,
+    "cases_skipped_as_fold": [],
+    "first_draft_clean_rate": 0.17,
+    "repaired_rate": 0.83,
+    "content_dropped_rate": 0.83,
+    "avg_attempts": 1.83,
+    "avg_seconds": 40.3,
+    "avg_tokens_per_second": 10.3,
+    "avg_first_token_seconds": 4.4,
+    "first_draft_problem_runs": {
+      "uncited line": 4,
+      "uncited text": 3,
+      "empty letter": 2,
+      "number or date": 2,
+      "date": 1,
+      "name": 1
+    }
+  },
+  "rows": [
+    {
+      "case": "case_001_not_received",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 47.0,
+      "first_draft_problems": [
+        "uncited text"
+      ],
+      "repairs": [
+        "dropped uncited text: We understand your concern that you haven't received it."
+      ],
+      "tokens": 165,
+      "first_token_seconds": 12.6,
+      "tokens_per_second": 10.3,
+      "first_draft_issues": [
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "Thank you for reaching out regarding order 8463414, the ceramic planter you purchased for $9.00 on June 7, 2026. [E2] We understand your concern that you haven't received it."
+        }
+      ]
+    },
+    {
+      "case": "case_002_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 40.8,
+      "first_draft_problems": [
+        "empty letter",
+        "number or date",
+        "uncited line",
+        "uncited text"
+      ],
+      "repairs": [
+        "dropped uncited text: . We understand your disappointment with the condition of the item upo"
+      ],
+      "tokens": 194,
+      "first_token_seconds": 2.7,
+      "tokens_per_second": 9.4,
+      "first_draft_issues": [
+        {
+          "problem": "no evidence citation",
+          "line": "Thank you for reaching out regarding order 9814174, the linen kitchen towel set. We understand your disappointment with the condition of the item upon arrival."
+        },
+        {
+          "problem": "number or date not in cited evidence: 2026-01-13",
+          "line": "We've reviewed the details of your case and can confirm that the box was indeed crushed and the item arrived damaged [E1][E5]. The order was placed on 2026-01-13 and shipped on 2026-01-14 via USPS wit"
+        },
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "As you mentioned, the box was crushed and the item was broken [E5][E2], and we sincerely apologize for the inconvenience this has caused."
+        },
+        {
+          "problem": "letter contains no cited facts",
+          "line": "(whole letter)"
+        }
+      ]
+    },
+    {
+      "case": "case_003_not_as_described",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 48.9,
+      "first_draft_problems": [
+        "number or date",
+        "uncited line"
+      ],
+      "repairs": [
+        "completed a citation: added E2 (the fact is in that evidence, not the one cited)",
+        "dropped uncited line: We are committed to resolving this issue and appreciate you bringing t"
+      ],
+      "tokens": 255,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 10.8,
+      "first_draft_issues": [
+        {
+          "problem": "number or date not in cited evidence: 4721371",
+          "line": "Thank you for reaching out regarding dispute case number 4721371, opened on 2026-06-08. We understand your disappointment that the art print set did not meet your expectations [E1]."
+        },
+        {
+          "problem": "no evidence citation",
+          "line": "We are committed to resolving this issue and appreciate you bringing this to our attention."
+        }
+      ]
+    },
+    {
+      "case": "case_004_not_received",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 35.0,
+      "first_draft_problems": [
+        "date",
+        "uncited line"
+      ],
+      "repairs": [
+        "dropped uncited text: , we understand your concern about not receiving it."
+      ],
+      "tokens": 168,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 11.4,
+      "first_draft_issues": [
+        {
+          "problem": "no evidence citation",
+          "line": "Thank you for reaching out regarding your order. We understand your concern about not receiving your wooden desk organizer."
+        },
+        {
+          "problem": "date not in cited evidence: February 24",
+          "line": "We've investigated this matter thoroughly. According to our records [E2], you ordered a wooden desk organizer for $50.00 on February 24, 2026. The order was shipped via FedEx on February 25, 2026, wit"
+        }
+      ]
+    },
+    {
+      "case": "case_005_not_as_described",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 48.9,
+      "first_draft_problems": [
+        "empty letter",
+        "name",
+        "uncited line",
+        "uncited text"
+      ],
+      "repairs": [
+        "completed a citation: added E6 (the fact is in that evidence, not the one cited)",
+        "completed a citation: added E2 (the fact is in that evidence, not the one cited)",
+        "completed a citation: added E3 (the fact is in that evidence, not the one cited)",
+        "completed a citation: added E4 (the fact is in that evidence, not the one cited)",
+        "dropped uncited text: specifies a set of two stonewashed linen towels, 18 by 28 inches."
+      ],
+      "tokens": 218,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 9.8,
+      "first_draft_issues": [
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "Thank you for contacting us regarding dispute [E1] concerning the color of the linen kitchen towel set. We understand your concern that the color differs from the listing photos. [E6] confirms that yo"
+        },
+        {
+          "problem": "name or proper noun not in cited evidence: Order",
+          "line": "We shipped your order [E2] \u2013 Order 1724121 \u2013 on 2026-03-01 via USPS with tracking number 94001274575492340487974 [E3]. The tracking information shows the item was delivered on 2026-03-03 [E4]. The lis"
+        },
+        {
+          "problem": "no evidence citation",
+          "line": "We are sorry you feel the item didn't match the description. We strive to accurately represent our products and appreciate your feedback."
+        },
+        {
+          "problem": "letter contains no cited facts",
+          "line": "(whole letter)"
+        }
+      ]
+    },
+    {
+      "case": "case_006_not_received",
+      "run": 1,
+      "attempts": 1,
+      "first_draft_clean": true,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 21.2,
+      "first_draft_problems": [],
+      "repairs": [],
+      "tokens": 188,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 10.2,
+      "first_draft_issues": []
+    }
+  ]
+}

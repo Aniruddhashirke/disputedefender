@@ -1,0 +1,6 @@
+# SYNTHETIC EXAMPLE. Not a real seller or buyer.
+platform: etsy
+type: item not as described
+reason: The material does not look like what was described.
+amount: $60.00
+opened: 2026-08-07

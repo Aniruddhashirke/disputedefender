@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+1121911,Jon T.,Ceramic planter,36.00,2026-04-14,2026-04-16,USPS,94001201494632504520096,delivered,2026-04-22

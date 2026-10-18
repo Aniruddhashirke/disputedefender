@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+7450512,Ben L.,Art print set,19.00,2026-05-27,2026-05-28,FedEx,692838672690,delivered,2026-05-31

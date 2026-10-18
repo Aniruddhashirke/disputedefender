@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+1001234,Sam R.,Hand-stamped leather journal,48.00,2026-03-01,2026-03-02,USPS,9400100000000000000001,delivered,2026-03-05

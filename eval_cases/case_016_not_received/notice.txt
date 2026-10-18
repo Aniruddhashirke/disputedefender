@@ -1,0 +1,6 @@
+# SYNTHETIC EXAMPLE. Not a real seller or buyer.
+platform: etsy
+type: item not received
+reason: The package never arrived.
+amount: $22.00
+opened: 2026-08-24

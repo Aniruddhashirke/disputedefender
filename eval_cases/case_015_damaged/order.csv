@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+2685395,Dev R.,Hand-dyed wool scarf,84.00,2026-01-06,2026-01-08,FedEx,995028166724,delivered,2026-01-13

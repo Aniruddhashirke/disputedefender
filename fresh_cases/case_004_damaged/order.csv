@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+1427798,Sam O.,Ceramic planter,37.00,2026-05-08,2026-05-10,FedEx,638805716525,delivered,2026-05-14

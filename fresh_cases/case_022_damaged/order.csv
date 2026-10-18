@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+8208628,Mina V.,Leather journal,39.00,2026-05-03,2026-05-06,FedEx,676826543614,delivered,2026-05-08

@@ -1,0 +1,3 @@
+2026-05-02 08:41 | buyer | Hi, my order has not arrived yet. Can you check on it?
+2026-05-03 08:41 | seller | Tracking shows it was delivered on May 1. Could you check with neighbors or your building office?
+2026-05-04 08:41 | buyer | No, I want a full refund.

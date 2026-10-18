@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+1001402,Jo K.,Sticker sheet,4.50,2026-03-01,2026-03-02,USPS,9400100000000000000002,delivered,2026-03-06

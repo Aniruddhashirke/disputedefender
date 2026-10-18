@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+1724121,Jon T.,Linen kitchen towel set,22.00,2026-02-28,2026-03-01,USPS,94001274575492340487974,delivered,2026-03-03

@@ -1,0 +1,191 @@
+{
+  "model": "gemma3:4b",
+  "backend": "ollama",
+  "repeat": 5,
+  "summary": {
+    "runs": 15,
+    "cases_skipped_as_fold": [
+      "case_002_inr_no_evidence",
+      "case_003_low_value"
+    ],
+    "first_draft_clean_rate": 0.4,
+    "repaired_rate": 0.53,
+    "content_dropped_rate": 0.2,
+    "avg_attempts": 1.13,
+    "avg_seconds": 53.3,
+    "first_draft_problem_runs": {
+      "photo claim": 7,
+      "evidence id in prose": 2
+    }
+  },
+  "rows": [
+    {
+      "case": "case_001_inr_delivered",
+      "run": 1,
+      "attempts": 1,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": false,
+      "seconds": 79.4,
+      "first_draft_problems": [
+        "photo claim"
+      ]
+    },
+    {
+      "case": "case_001_inr_delivered",
+      "run": 2,
+      "attempts": 1,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 31.9,
+      "first_draft_problems": [
+        "photo claim"
+      ]
+    },
+    {
+      "case": "case_001_inr_delivered",
+      "run": 3,
+      "attempts": 1,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": false,
+      "seconds": 29.9,
+      "first_draft_problems": [
+        "photo claim"
+      ]
+    },
+    {
+      "case": "case_001_inr_delivered",
+      "run": 4,
+      "attempts": 1,
+      "first_draft_clean": true,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 34.0,
+      "first_draft_problems": []
+    },
+    {
+      "case": "case_001_inr_delivered",
+      "run": 5,
+      "attempts": 1,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 30.9,
+      "first_draft_problems": [
+        "photo claim"
+      ]
+    },
+    {
+      "case": "case_004_not_as_described",
+      "run": 1,
+      "attempts": 1,
+      "first_draft_clean": true,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 76.7,
+      "first_draft_problems": []
+    },
+    {
+      "case": "case_004_not_as_described",
+      "run": 2,
+      "attempts": 1,
+      "first_draft_clean": true,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 31.5,
+      "first_draft_problems": []
+    },
+    {
+      "case": "case_004_not_as_described",
+      "run": 3,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 97.2,
+      "first_draft_problems": [
+        "evidence id in prose"
+      ]
+    },
+    {
+      "case": "case_004_not_as_described",
+      "run": 4,
+      "attempts": 1,
+      "first_draft_clean": true,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 39.0,
+      "first_draft_problems": []
+    },
+    {
+      "case": "case_004_not_as_described",
+      "run": 5,
+      "attempts": 1,
+      "first_draft_clean": true,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 30.1,
+      "first_draft_problems": []
+    },
+    {
+      "case": "case_005_nad_with_listing",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 134.5,
+      "first_draft_problems": [
+        "evidence id in prose"
+      ]
+    },
+    {
+      "case": "case_005_nad_with_listing",
+      "run": 2,
+      "attempts": 1,
+      "first_draft_clean": true,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 49.6,
+      "first_draft_problems": []
+    },
+    {
+      "case": "case_005_nad_with_listing",
+      "run": 3,
+      "attempts": 1,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": false,
+      "seconds": 40.2,
+      "first_draft_problems": [
+        "photo claim"
+      ]
+    },
+    {
+      "case": "case_005_nad_with_listing",
+      "run": 4,
+      "attempts": 1,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": false,
+      "seconds": 39.5,
+      "first_draft_problems": [
+        "photo claim"
+      ]
+    },
+    {
+      "case": "case_005_nad_with_listing",
+      "run": 5,
+      "attempts": 1,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": false,
+      "seconds": 55.3,
+      "first_draft_problems": [
+        "photo claim"
+      ]
+    }
+  ]
+}

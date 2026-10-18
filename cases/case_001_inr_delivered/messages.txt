@@ -1,0 +1,3 @@
+2026-03-07 09:12 | buyer | Hi, my journal still has not arrived.
+2026-03-07 10:40 | seller | Tracking shows it was delivered on March 5. Could you check with neighbors or your building office?
+2026-03-09 18:03 | buyer | I checked and found nothing. I am opening a case.

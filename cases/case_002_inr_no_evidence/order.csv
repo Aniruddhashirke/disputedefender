@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+1001301,Alex T.,Ceramic planter set,60.00,2026-02-20,,,,,

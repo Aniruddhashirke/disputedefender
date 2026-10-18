@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+4646588,Ben L.,Embroidered tote bag,24.00,2026-01-19,2026-01-21,USPS,94001700368146695697658,delivered,2026-01-26

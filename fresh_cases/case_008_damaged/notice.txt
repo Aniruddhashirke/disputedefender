@@ -1,0 +1,6 @@
+# SYNTHETIC EXAMPLE. Not a real seller or buyer.
+platform: etsy
+type: item arrived damaged
+reason: The box was crushed and the item inside is damaged.
+amount: $54.00
+opened: 2026-08-13

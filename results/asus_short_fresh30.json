@@ -1,0 +1,874 @@
+{
+  "version": "2026.10.16-a",
+  "model": "gemma3:4b",
+  "backend": "ollama",
+  "repeat": 1,
+  "photos": "code",
+  "prompt_style": "short",
+  "summary": {
+    "runs": 26,
+    "errors": 0,
+    "interrupted": false,
+    "cases_skipped_as_fold": [
+      "case_012_not_received",
+      "case_013_not_received",
+      "case_023_not_received",
+      "case_027_not_as_described"
+    ],
+    "first_draft_clean_rate": 0.0,
+    "repaired_rate": 0.69,
+    "content_dropped_rate": 0.5,
+    "avg_attempts": 2.0,
+    "avg_seconds": 42.1,
+    "avg_tokens_per_second": 10.6,
+    "avg_first_token_seconds": 2.9,
+    "first_draft_problem_runs": {
+      "uncited text": 15,
+      "overclaim word": 14,
+      "number or date": 9,
+      "uncited line": 9,
+      "empty letter": 8,
+      "name": 3,
+      "quote": 3,
+      "date": 2
+    }
+  },
+  "rows": [
+    {
+      "case": "case_001_not_received",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 34.6,
+      "first_draft_problems": [
+        "overclaim word",
+        "uncited text"
+      ],
+      "repairs": [
+        "dropped (strong claim word not in cited evidence: never): You reported that the package never arrived on 2026-03-10, a"
+      ],
+      "tokens": 152,
+      "first_token_seconds": 3.6,
+      "tokens_per_second": 10.7,
+      "first_draft_issues": [
+        {
+          "problem": "strong claim word not in cited evidence: never",
+          "line": "Thank you for reaching out regarding order 1054145, the embroidered tote bag you purchased for $38.00 on 2026-02-20 [E2]. I understand your concern that the package never arrived, despite the tracking"
+        },
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "As per our policy, I maintain records of shipment to assist in cases like this [E6]. I want to assure you I'm committed to resolving this issue."
+        }
+      ]
+    },
+    {
+      "case": "case_002_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 43.9,
+      "first_draft_problems": [
+        "empty letter",
+        "number or date",
+        "uncited line",
+        "uncited text"
+      ],
+      "repairs": [
+        "dropped (strong claim word not in cited evidence: received): concerning the wooden desk organizer, we understand you rece"
+      ],
+      "tokens": 175,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 11.3,
+      "first_draft_issues": [
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "Thank you for reaching out regarding dispute [E1] concerning the wooden desk organizer. We understand your disappointment with the condition of the item you received."
+        },
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "We acknowledge that the listing [E7] described the organizer as \"Solid walnut desk organizer. Wood grain differs from piece to piece.\" and we appreciate you bringing this to our attention."
+        },
+        {
+          "problem": "number or date not in cited evidence: 2026-08-17",
+          "line": "Following the delivery confirmation [E4] on 2026-08-17 and your communication [E5] on 2026-08-22 detailing the damage, we want to assure you we're taking this seriously.  We are reviewing our packagin"
+        },
+        {
+          "problem": "no evidence citation",
+          "line": "We appreciate you bringing this to our attention."
+        },
+        {
+          "problem": "letter contains no cited facts",
+          "line": "(whole letter)"
+        }
+      ]
+    },
+    {
+      "case": "case_003_not_received",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 33.0,
+      "first_draft_problems": [
+        "date",
+        "uncited text"
+      ],
+      "repairs": [],
+      "tokens": 193,
+      "first_token_seconds": 3.0,
+      "tokens_per_second": 11.4,
+      "first_draft_issues": [
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "Thank you for reaching out regarding order 2056099, the leather journal you purchased for $35.00 on June 6th [E2]. I understand your concern that the item hasn't arrived."
+        },
+        {
+          "problem": "date not in cited evidence: June 19th",
+          "line": "I appreciate you bringing this to our attention, especially after you contacted us on June 19th [E5]. We suggested checking with neighbors and your building office as a next step [E6].  As per our pol"
+        }
+      ]
+    },
+    {
+      "case": "case_004_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": false,
+      "seconds": 33.0,
+      "first_draft_problems": [
+        "empty letter",
+        "overclaim word",
+        "uncited line"
+      ],
+      "repairs": [
+        "completed a citation: added E2 (the fact is in that evidence, not the one cited)"
+      ],
+      "tokens": 142,
+      "first_token_seconds": 2.7,
+      "tokens_per_second": 11.9,
+      "first_draft_issues": [
+        {
+          "problem": "strong claim word not in cited evidence: received",
+          "line": "Thank you for reaching out regarding order 1427798, the ceramic planter you received. We understand your concern about the crack on the item [E5]."
+        },
+        {
+          "problem": "strong claim word not in cited evidence: sorry",
+          "line": "We're very sorry to hear that the item arrived damaged. Our records show the order was shipped on 2026-05-10 via FedEx, tracking number 638805716525 [E3], and delivered on 2026-05-14 [E4]. We apprecia"
+        },
+        {
+          "problem": "no evidence citation",
+          "line": "We sincerely apologize for the inconvenience this has caused."
+        },
+        {
+          "problem": "letter contains no cited facts",
+          "line": "(whole letter)"
+        }
+      ]
+    },
+    {
+      "case": "case_005_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": false,
+      "seconds": 40.8,
+      "first_draft_problems": [
+        "empty letter",
+        "name",
+        "number or date",
+        "uncited line",
+        "uncited text"
+      ],
+      "repairs": [
+        "completed a citation: added E3 (the fact is in that evidence, not the one cited)"
+      ],
+      "tokens": 209,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 11.1,
+      "first_draft_issues": [
+        {
+          "problem": "number or date not in cited evidence: 1028854",
+          "line": "Thank you for reaching out regarding order 1028854 for the embroidered tote bag. We understand your concern about a crack on one side of the item [E5]."
+        },
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "We acknowledge that the listing description stated, \"Cotton tote bag with hand embroidery. Thread color may differ slightly from the photos\" [E8]. While we strive to accurately represent our products,"
+        },
+        {
+          "problem": "name or proper noun not in cited evidence: FedEx",
+          "line": "We also see that the item was delivered on 2026-08-03 via FedEx tracking number 546774872807 [E4], and shipped on 2026-07-28 [E3].  The amount in dispute, $39.00, aligns with the purchase price of the"
+        },
+        {
+          "problem": "no evidence citation",
+          "line": "We appreciate you bringing this to our attention and will review our quality control processes to minimize similar issues in the future."
+        },
+        {
+          "problem": "letter contains no cited facts",
+          "line": "(whole letter)"
+        }
+      ]
+    },
+    {
+      "case": "case_006_not_received",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 29.7,
+      "first_draft_problems": [
+        "quote",
+        "uncited line"
+      ],
+      "repairs": [
+        "dropped (quoted text not found in cited evidence: \"in transit\"): Order 1419929 shipped on June 5th via FedEx with tracking nu",
+        "dropped a clause that could not stand alone: and I responded by stating that we would monitor the shipmen"
+      ],
+      "tokens": 158,
+      "first_token_seconds": 2.7,
+      "tokens_per_second": 11.6,
+      "first_draft_issues": [
+        {
+          "problem": "quoted text not found in cited evidence: \"in transit\"",
+          "line": "As you can see from the tracking information [E3], the order (Order 1419929) shipped on June 5th via FedEx with tracking number 920933250205 and is currently marked as \"in transit\". We were contacted "
+        },
+        {
+          "problem": "no evidence citation",
+          "line": "I sincerely apologize for the delay and the anxiety this has caused. I will continue to monitor the tracking details and will update you immediately if there are any changes."
+        }
+      ]
+    },
+    {
+      "case": "case_007_not_as_described",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 43.2,
+      "first_draft_problems": [
+        "empty letter",
+        "number or date",
+        "overclaim word"
+      ],
+      "repairs": [],
+      "tokens": 203,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 10.6,
+      "first_draft_issues": [
+        {
+          "problem": "number or date not in cited evidence: 7277299",
+          "line": "Thank you for reaching out regarding dispute case 7277299, concerning order 7277299 for the hand-dyed wool scarf. We understand your disappointment that the item did not meet your expectations [E6]."
+        },
+        {
+          "problem": "strong claim word not in cited evidence: received",
+          "line": "As detailed in the listing description [E9], this scarf is advertised as being 70 inches long and in the color shown in the photographs. We acknowledge your feedback that the item you received did not"
+        },
+        {
+          "problem": "strong claim word not in cited evidence: apologize",
+          "line": "We can confirm that the order was shipped on 2026-03-28 via FedEx, tracking number 801979924883 [E3], and delivered on 2026-03-30 [E4].  We apologize that the item did not align with your expectations"
+        },
+        {
+          "problem": "letter contains no cited facts",
+          "line": "(whole letter)"
+        }
+      ]
+    },
+    {
+      "case": "case_008_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 43.0,
+      "first_draft_problems": [
+        "overclaim word",
+        "uncited line",
+        "uncited text"
+      ],
+      "repairs": [
+        "dropped uncited text: , our hand-stitched leather journals feature natural leather with inhe"
+      ],
+      "tokens": 219,
+      "first_token_seconds": 3.0,
+      "tokens_per_second": 11.0,
+      "first_draft_issues": [
+        {
+          "problem": "no evidence citation",
+          "line": "Thank you for reaching out regarding order 2701867, the leather journal. We understand your disappointment with the condition of the item upon arrival."
+        },
+        {
+          "problem": "strong claim word not in cited evidence: indeed",
+          "line": "We've reviewed the details of your case and can confirm that the box was indeed crushed upon delivery, as you reported [E1][E5]. Our records show the order was shipped on 2026-08-05 via USPS with trac"
+        },
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "As stated in the listing description [E7], our hand-stitched leather journals feature natural leather which inherently includes marks and color variation \u2013 a characteristic we clearly communicated in "
+        }
+      ]
+    },
+    {
+      "case": "case_009_not_received",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 32.6,
+      "first_draft_problems": [
+        "empty letter",
+        "name",
+        "uncited text"
+      ],
+      "repairs": [
+        "dropped (strong claim word not in cited evidence: received): you have not yet received the item."
+      ],
+      "tokens": 169,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 11.4,
+      "first_draft_issues": [
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "Thank you for reaching out regarding your order, Order 9589265 for the hand-poured soy candle [E2]. I understand your concern that you haven't yet received it."
+        },
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "I've checked the tracking information for your shipment, which was shipped via UPS on 2026-02-26 with tracking number 1Z5HQG2S6101360940 [E3]. The carrier status currently indicates it is still in tra"
+        },
+        {
+          "problem": "name or proper noun not in cited evidence: I'm",
+          "line": "As you mentioned on 2026-03-07 at 12:23 [E4], the order hasn't arrived yet, and I'm monitoring the tracking closely to ensure its delivery [E5]."
+        },
+        {
+          "problem": "letter contains no cited facts",
+          "line": "(whole letter)"
+        }
+      ]
+    },
+    {
+      "case": "case_010_not_received",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 36.8,
+      "first_draft_problems": [
+        "overclaim word"
+      ],
+      "repairs": [],
+      "tokens": 168,
+      "first_token_seconds": 3.1,
+      "tokens_per_second": 10.8,
+      "first_draft_issues": [
+        {
+          "problem": "strong claim word not in cited evidence: apologize",
+          "line": "According to our records, the order shipped on July 22nd via USPS with tracking number 94001418335769708170443 [E3] and was marked as delivered on July 27th [E4]. I apologize that you haven't received"
+        }
+      ]
+    },
+    {
+      "case": "case_011_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": false,
+      "seconds": 47.9,
+      "first_draft_problems": [
+        "overclaim word"
+      ],
+      "repairs": [
+        "completed a citation: added E1 (the fact is in that evidence, not the one cited)"
+      ],
+      "tokens": 219,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 9.9,
+      "first_draft_issues": [
+        {
+          "problem": "strong claim word not in cited evidence: sorry",
+          "line": "We're very sorry to hear that the item arrived damaged. Our records show the order was shipped on 2026-05-18 via UPS, tracking number 1ZEM00L98453654214 [E3][E4].  The carrier confirms delivery on 202"
+        },
+        {
+          "problem": "strong claim word not in cited evidence: apologize",
+          "line": "We sincerely apologize for the disappointment this has caused. We are happy to process a refund of $8.50 to resolve this issue [E1]."
+        }
+      ]
+    },
+    {
+      "case": "case_014_not_received",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 40.9,
+      "first_draft_problems": [
+        "uncited text"
+      ],
+      "repairs": [],
+      "tokens": 169,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 9.9,
+      "first_draft_issues": [
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "I want to assure you that we're actively looking into this. Order 8482619, for the art print set totaling $19.00 [E2], was shipped on March 12th via UPS with tracking number 1ZUPR1RP7999732381 [E3]. T"
+        }
+      ]
+    },
+    {
+      "case": "case_015_not_as_described",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": false,
+      "seconds": 53.4,
+      "first_draft_problems": [
+        "number or date",
+        "overclaim word",
+        "quote"
+      ],
+      "repairs": [
+        "completed a citation: added E2 (the fact is in that evidence, not the one cited)",
+        "completed a citation: added E2 (the fact is in that evidence, not the one cited)"
+      ],
+      "tokens": 225,
+      "first_token_seconds": 3.3,
+      "tokens_per_second": 9.2,
+      "first_draft_issues": [
+        {
+          "problem": "number or date not in cited evidence: 3169746",
+          "line": "Thank you for reaching out regarding dispute case 3169746. We understand your disappointment that the hand-dyed wool scarf was not exactly as you expected. [E6] You mentioned that this is not what you"
+        },
+        {
+          "problem": "quoted text not found in cited evidence: \"color may vary slightly from the photos\"",
+          "line": "As you know, this scarf is hand-dyed, and [E8] the listing description clearly states that \"color may vary slightly from the photos\" due to the handmade nature of the item. [E7] We also explained that"
+        },
+        {
+          "problem": "strong claim word not in cited evidence: apologize",
+          "line": "We sincerely apologize that the item didn't meet your expectations. [E1]"
+        }
+      ]
+    },
+    {
+      "case": "case_016_not_received",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 37.2,
+      "first_draft_problems": [
+        "date",
+        "empty letter",
+        "name",
+        "uncited line"
+      ],
+      "repairs": [],
+      "tokens": 181,
+      "first_token_seconds": 2.9,
+      "tokens_per_second": 10.1,
+      "first_draft_issues": [
+        {
+          "problem": "no evidence citation",
+          "line": "Thank you for reaching out regarding order 1121911 for the ceramic planter. We understand your concern about not receiving the item."
+        },
+        {
+          "problem": "date not in cited evidence: April 14",
+          "line": "According to our records [E2], you purchased the planter for $36.00 on April 14, 2026. The order was shipped via USPS on April 16, 2026, with tracking number 94001201494632504520096 [E3]."
+        },
+        {
+          "problem": "name or proper noun not in cited evidence: USPS",
+          "line": "Our shipping carrier, USPS, confirms that the package was delivered on April 22, 2026 [E4]. We apologize that you haven't yet located the package; we recommend checking with your neighbors or your bui"
+        },
+        {
+          "problem": "letter contains no cited facts",
+          "line": "(whole letter)"
+        }
+      ]
+    },
+    {
+      "case": "case_017_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 42.1,
+      "first_draft_problems": [
+        "overclaim word",
+        "uncited text"
+      ],
+      "repairs": [],
+      "tokens": 214,
+      "first_token_seconds": 2.9,
+      "tokens_per_second": 9.5,
+      "first_draft_issues": [
+        {
+          "problem": "strong claim word not in cited evidence: apologize",
+          "line": "Thank you for contacting us regarding your order (Order 7132511) and the reported damage to the leather journal [E2]. We sincerely apologize that the item arrived with a crack on one side [E1]."
+        },
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "As noted in the listing description, our journals are hand-stitched and made with natural leather, which inherently includes marks and color variation [E8]. While we strive to accurately represent our"
+        }
+      ]
+    },
+    {
+      "case": "case_018_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 46.6,
+      "first_draft_problems": [
+        "overclaim word",
+        "uncited line"
+      ],
+      "repairs": [
+        "dropped uncited text: , thread color may differ slightly from the photos and the item is a c"
+      ],
+      "tokens": 212,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 9.1,
+      "first_draft_issues": [
+        {
+          "problem": "no evidence citation",
+          "line": "Thank you for reaching out regarding order 3885954 for the embroidered tote bag. We sincerely apologize for the issues you've experienced with your recent delivery."
+        },
+        {
+          "problem": "strong claim word not in cited evidence: clearly",
+          "line": "As you noted, the listing description [E8] clearly states that the thread color may differ slightly from the photos and that the item is a cotton tote bag with hand embroidery. Furthermore, we underst"
+        },
+        {
+          "problem": "strong claim word not in cited evidence: sorry",
+          "line": "We can confirm that the order was shipped on 2026-04-05 via UPS, tracking number 1ZK7CWUN7975726530 [E3], and delivered on 2026-04-08 [E4].  We are very sorry this did not meet your expectations given"
+        }
+      ]
+    },
+    {
+      "case": "case_019_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 48.8,
+      "first_draft_problems": [
+        "number or date",
+        "overclaim word",
+        "uncited text"
+      ],
+      "repairs": [
+        "dropped (quoted text not found in cited evidence: \"Hand-stitched leather journal. Natural l\"): states \"Hand-stitched leather journal. Natural leather has m",
+        "dropped a clause that could not stand alone: and delivered on 2026-02-08"
+      ],
+      "tokens": 232,
+      "first_token_seconds": 2.9,
+      "tokens_per_second": 9.4,
+      "first_draft_issues": [
+        {
+          "problem": "number or date not in cited evidence: 3930362",
+          "line": "Thank you for reaching out regarding order 3930362 for the leather journal. We understand your concern about a crack on one side of the item and the overall condition. [E5] We appreciate you bringing "
+        },
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "We acknowledge that the listing description specifically states: \"Hand-stitched leather journal. Natural leather has marks and color variation.\" [E7] This indicates that variations in color and minor "
+        },
+        {
+          "problem": "strong claim word not in cited evidence: sorry",
+          "line": "We are very sorry that the item arrived damaged and that you observed a crack. [E1] We can confirm that the order was shipped on 2026-02-06 via UPS, tracking number 1ZVFKWA74331478377 [E3] and deliver"
+        }
+      ]
+    },
+    {
+      "case": "case_020_not_as_described",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 58.8,
+      "first_draft_problems": [
+        "overclaim word",
+        "uncited line",
+        "uncited text"
+      ],
+      "repairs": [
+        "dropped uncited text: , this is not what you expected from the photos."
+      ],
+      "tokens": 251,
+      "first_token_seconds": 3.1,
+      "tokens_per_second": 9.2,
+      "first_draft_issues": [
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "As you know, this scarf was shipped on 2026-02-01 via UPS, tracking number 1Z34TKGC6376134050 [E3] and delivered on 2026-02-07 [E4]. We appreciate you bringing this to our attention."
+        },
+        {
+          "problem": "strong claim word not in cited evidence: clearly",
+          "line": "We want to assure you that our listing clearly states that each piece is dyed by hand, which can result in slight variations in color from the photos [E7]. We also acknowledge that you communicated th"
+        },
+        {
+          "problem": "no evidence citation",
+          "line": "We value your business and are committed to ensuring customer satisfaction."
+        }
+      ]
+    },
+    {
+      "case": "case_021_not_as_described",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 45.9,
+      "first_draft_problems": [
+        "overclaim word",
+        "quote",
+        "uncited text"
+      ],
+      "repairs": [
+        "dropped (quoted text not found in cited evidence: \"Solid walnut desk organizer with three c\"): Our records show you purchased the \"Solid walnut desk organi"
+      ],
+      "tokens": 241,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 11.3,
+      "first_draft_issues": [
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "Thank you for reaching out regarding dispute case number [E1], opened on 2026-08-07. We understand your disappointment that the item did not meet your expectations."
+        },
+        {
+          "problem": "quoted text not found in cited evidence: \"Solid walnut desk organizer with three c\"",
+          "line": "Our records show you purchased the \"Solid walnut desk organizer with three compartments\" (Order 5790391) on 2026-07-24 for $60.00 [E2]. The item was shipped on 2026-07-27 via FedEx, tracking number 36"
+        },
+        {
+          "problem": "strong claim word not in cited evidence: sorry",
+          "line": "We are truly sorry that the item did not align with your expectations based on the listing description [E8]."
+        }
+      ]
+    },
+    {
+      "case": "case_022_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": false,
+      "seconds": 44.3,
+      "first_draft_problems": [
+        "overclaim word",
+        "uncited text"
+      ],
+      "repairs": [
+        "completed a citation: added E2 (the fact is in that evidence, not the one cited)"
+      ],
+      "tokens": 236,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 11.3,
+      "first_draft_issues": [
+        {
+          "problem": "strong claim word not in cited evidence: received",
+          "line": "Thank you for contacting us regarding order 8208628, the hand-stitched leather journal you received. We sincerely apologize that the item arrived damaged and that this has caused you frustration [E6]."
+        },
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "We understand you reported the damage on 2026-05-13 at 17:43 [E6] and we appreciate you bringing this to our attention [E6]. As you noted, the listing specifically states that natural leather has mark"
+        },
+        {
+          "problem": "strong claim word not in cited evidence: sorry",
+          "line": "We can confirm that the order [E2] was shipped on 2026-05-06 via FedEx with tracking number 676826543614 [E3] and delivered on 2026-05-08 [E4]. We are very sorry that despite this delivery, the item a"
+        }
+      ]
+    },
+    {
+      "case": "case_024_not_received",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 31.3,
+      "first_draft_problems": [
+        "uncited text"
+      ],
+      "repairs": [
+        "dropped uncited text: , the order was shipped via UPS on 2026-03-27 with tracking number 1Z0"
+      ],
+      "tokens": 148,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 11.7,
+      "first_draft_issues": [
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "As you can see from the shipping information [E3], the order was shipped via UPS on 2026-03-27 with tracking number 1Z0C356D5578554497. The tracking status indicates the package is currently in transi"
+        }
+      ]
+    },
+    {
+      "case": "case_025_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 37.7,
+      "first_draft_problems": [
+        "empty letter",
+        "number or date",
+        "overclaim word"
+      ],
+      "repairs": [],
+      "tokens": 212,
+      "first_token_seconds": 2.7,
+      "tokens_per_second": 11.1,
+      "first_draft_issues": [
+        {
+          "problem": "number or date not in cited evidence: 2886721",
+          "line": "Thank you for reaching out regarding order 2886721 for the leather journal. We understand your concern about a crack on the item and appreciate you bringing this to our attention [E6]."
+        },
+        {
+          "problem": "strong claim word not in cited evidence: clearly",
+          "line": "We've reviewed the details of your order and the delivery information [E2][E3][E4]. The journal was shipped on 2026-03-25 via USPS with tracking number 94001131734821130426579 and delivered on 2026-03"
+        },
+        {
+          "problem": "strong claim word not in cited evidence: apologize",
+          "line": "We sincerely apologize for any inconvenience this has caused. We are happy to discuss this further and explore potential solutions [E1]."
+        },
+        {
+          "problem": "letter contains no cited facts",
+          "line": "(whole letter)"
+        }
+      ]
+    },
+    {
+      "case": "case_026_not_as_described",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 50.8,
+      "first_draft_problems": [
+        "number or date",
+        "uncited line"
+      ],
+      "repairs": [
+        "completed a citation: added E2 (the fact is in that evidence, not the one cited)",
+        "dropped (number or date not in cited evidence: 53.00): you purchased the leather journal for $53.00 on 2026-09-05, ",
+        "dropped a clause that could not stand alone: and was delivered on 2026-09-11"
+      ],
+      "tokens": 254,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 10.8,
+      "first_draft_issues": [
+        {
+          "problem": "number or date not in cited evidence: 6186655",
+          "line": "Thank you for reaching out regarding dispute case 6186655, opened on 2026-09-15 concerning the leather journal. We understand your concern that the item was smaller than you expected [E1]."
+        },
+        {
+          "problem": "number or date not in cited evidence: 53.00",
+          "line": "As documented in order 6186655 [E2], you purchased the journal for $53.00 on 2026-09-05. The item shipped via FedEx on 2026-09-07 with tracking number 716503339015 [E3] and was delivered on 2026-09-11"
+        },
+        {
+          "problem": "no evidence citation",
+          "line": "We are happy to discuss this further to find a resolution."
+        }
+      ]
+    },
+    {
+      "case": "case_028_not_as_described",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 44.4,
+      "first_draft_problems": [
+        "number or date",
+        "uncited text"
+      ],
+      "repairs": [
+        "completed a citation: added E2 (the fact is in that evidence, not the one cited)",
+        "dropped uncited text: . We do our best to accurately represent our products in the listing p"
+      ],
+      "tokens": 206,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 10.7,
+      "first_draft_issues": [
+        {
+          "problem": "number or date not in cited evidence: 5168317",
+          "line": "Thank you for reaching out regarding order 5168317. We understand your disappointment that the art print set did not meet your expectations based on the photos in the listing [E5]."
+        },
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "We appreciate you bringing this to our attention. As you know, each piece is made by hand, and therefore small differences can occur [E6]. We do our best to accurately represent our products in the li"
+        }
+      ]
+    },
+    {
+      "case": "case_029_not_as_described",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 50.2,
+      "first_draft_problems": [
+        "uncited text"
+      ],
+      "repairs": [],
+      "tokens": 252,
+      "first_token_seconds": 2.8,
+      "tokens_per_second": 10.7,
+      "first_draft_issues": [
+        {
+          "problem": "text after the last citation has no evidence",
+          "line": "Our listing description specifically states that \"Each piece is dyed by hand, so color may vary slightly from the photos\" [E7]. We strive to accurately represent our products, but due to the nature of"
+        }
+      ]
+    },
+    {
+      "case": "case_030_not_as_described",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 42.7,
+      "first_draft_problems": [
+        "empty letter",
+        "number or date"
+      ],
+      "repairs": [
+        "completed a citation: added E2 (the fact is in that evidence, not the one cited)",
+        "dropped (quoted text not found in cited evidence: \"Colors on paper can differ from your scr\"): Our listing description clearly states that \"Colors on paper"
+      ],
+      "tokens": 203,
+      "first_token_seconds": 2.9,
+      "tokens_per_second": 10.8,
+      "first_draft_issues": [
+        {
+          "problem": "number or date not in cited evidence: 7450512",
+          "line": "Thank you for reaching out regarding order 7450512. We understand your disappointment that the art print set was not as you expected. [E6] You mentioned that this is not what you expected from the pho"
+        },
+        {
+          "problem": "letter contains no cited facts",
+          "line": "(whole letter)"
+        }
+      ]
+    }
+  ]
+}

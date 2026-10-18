@@ -1,0 +1,6 @@
+# SYNTHETIC EXAMPLE. Not a real seller or buyer.
+platform: etsy
+type: item not as described
+reason: It does not match the photos in the listing.
+amount: $76.00
+opened: 2026-02-15

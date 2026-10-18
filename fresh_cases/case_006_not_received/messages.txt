@@ -1,0 +1,2 @@
+2026-06-15 16:06 | buyer | Hi, my order has not arrived yet. Can you check on it?
+2026-06-16 16:06 | seller | The tracking shows it is still in transit. It should arrive soon, and I will keep watching it.

@@ -1,0 +1,3 @@
+2026-01-31 14:13 | buyer | I think the item is different from how it was described.
+2026-02-01 14:13 | seller | Each piece is made by hand, so small differences can happen.
+2026-02-02 14:13 | buyer | No, I want a full refund.

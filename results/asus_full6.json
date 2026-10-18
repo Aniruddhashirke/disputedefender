@@ -1,0 +1,135 @@
+{
+  "version": "2026.10.16-a",
+  "model": "gemma3:4b",
+  "backend": "ollama",
+  "repeat": 1,
+  "photos": "code",
+  "prompt_style": "full",
+  "summary": {
+    "runs": 6,
+    "errors": 0,
+    "interrupted": false,
+    "cases_skipped_as_fold": [],
+    "first_draft_clean_rate": 0.67,
+    "repaired_rate": 0.33,
+    "content_dropped_rate": 0.33,
+    "avg_attempts": 1.33,
+    "avg_seconds": 26.4,
+    "avg_tokens_per_second": 9.7,
+    "avg_first_token_seconds": 3.4,
+    "first_draft_problem_runs": {
+      "quote": 1,
+      "overclaim word": 1
+    }
+  },
+  "rows": [
+    {
+      "case": "case_001_not_received",
+      "run": 1,
+      "attempts": 1,
+      "first_draft_clean": true,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 18.8,
+      "first_draft_problems": [],
+      "repairs": [],
+      "tokens": 131,
+      "first_token_seconds": 3.2,
+      "tokens_per_second": 9.8,
+      "first_draft_issues": []
+    },
+    {
+      "case": "case_002_damaged",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 51.2,
+      "first_draft_problems": [
+        "quote"
+      ],
+      "repairs": [
+        "dropped (quoted text not found in cited evidence: \"The box was crushed and the item inside \"): The buyer opened a dispute on 2026-01-24 stating \"The box wa"
+      ],
+      "tokens": 201,
+      "first_token_seconds": 3.2,
+      "tokens_per_second": 9.7,
+      "first_draft_issues": [
+        {
+          "problem": "quoted text not found in cited evidence: \"The box was crushed and the item inside \"",
+          "line": "The buyer opened a dispute on 2026-01-24 stating \"The box was crushed and the item inside is broken.\" [E2]"
+        }
+      ]
+    },
+    {
+      "case": "case_003_not_as_described",
+      "run": 1,
+      "attempts": 1,
+      "first_draft_clean": true,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 22.5,
+      "first_draft_problems": [],
+      "repairs": [],
+      "tokens": 146,
+      "first_token_seconds": 3.9,
+      "tokens_per_second": 7.8,
+      "first_draft_issues": []
+    },
+    {
+      "case": "case_004_not_received",
+      "run": 1,
+      "attempts": 1,
+      "first_draft_clean": true,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 16.1,
+      "first_draft_problems": [],
+      "repairs": [],
+      "tokens": 126,
+      "first_token_seconds": 3.4,
+      "tokens_per_second": 10.0,
+      "first_draft_issues": []
+    },
+    {
+      "case": "case_005_not_as_described",
+      "run": 1,
+      "attempts": 1,
+      "first_draft_clean": true,
+      "repaired": false,
+      "dropped_content": false,
+      "seconds": 18.1,
+      "first_draft_problems": [],
+      "repairs": [],
+      "tokens": 154,
+      "first_token_seconds": 3.3,
+      "tokens_per_second": 10.4,
+      "first_draft_issues": []
+    },
+    {
+      "case": "case_006_not_received",
+      "run": 1,
+      "attempts": 2,
+      "first_draft_clean": false,
+      "repaired": true,
+      "dropped_content": true,
+      "seconds": 31.8,
+      "first_draft_problems": [
+        "overclaim word"
+      ],
+      "repairs": [
+        "dropped (strong claim word not in cited evidence: received): The buyer says I have not received my order"
+      ],
+      "tokens": 134,
+      "first_token_seconds": 3.2,
+      "tokens_per_second": 10.5,
+      "first_draft_issues": [
+        {
+          "problem": "strong claim word not in cited evidence: received",
+          "line": "The buyer says I have not received my order [E4]."
+        }
+      ]
+    }
+  ]
+}

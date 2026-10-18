@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+2298314,Farah K.,Hand-poured soy candle,21.00,2026-04-29,2026-05-02,FedEx,603948757210,delivered,2026-05-06

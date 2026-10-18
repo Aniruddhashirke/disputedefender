@@ -1,0 +1,3 @@
+2026-03-07 12:23 | buyer | Hi, my order has not arrived yet. Can you check on it?
+2026-03-08 12:23 | seller | The tracking shows it is still in transit. It should arrive soon, and I will keep watching it.
+2026-03-09 12:23 | buyer | No, I want a full refund.

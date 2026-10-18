@@ -1,0 +1,6 @@
+# SYNTHETIC EXAMPLE. Not a real seller or buyer.
+platform: etsy
+type: item arrived damaged
+reason: The item arrived damaged.
+amount: $39.00
+opened: 2026-06-13

@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+6306732,Ben L.,Leather journal,32.00,2026-08-18,2026-08-21,UPS,1ZGB4J912408580968,in transit,

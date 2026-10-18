@@ -1,0 +1,2 @@
+order_id,buyer_name,item,amount,order_date,ship_date,carrier,tracking_number,delivery_status,delivery_date
+9741308,Dev R.,Linen kitchen towel set,3.50,2026-04-28,2026-04-29,UPS,1ZB2YP2P7712638905,delivered,2026-05-01
