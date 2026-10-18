@@ -258,4 +258,6 @@ bodies over 1 MB refused).
 
 ## License
 
-[Add a LICENSE file and name the license here.]
+   MIT. See [LICENSE](LICENSE).
+
+   Gemma is used under its own license terms and is not included in this repository.
